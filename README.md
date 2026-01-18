@@ -1,10 +1,16 @@
 
-# temporal-polyfill
+# @rikdotcodes/temporal-polyfill *(Next.js 16 + Cache Components-compatible fork)*
+
+> **🍴 Forked from [temporal-polyfill](https://www.npmjs.com/package/temporal-polyfill) to add Next.js 16 Cache Components support** (see below)
 
 A lightweight polyfill for [Temporal](https://tc39.es/proposal-temporal/docs/), successor to the JavaScript `Date` object
 
 Only 20 kB, [spec compliant](#spec-compliance)
 
+### Fork Changes
+
+* `0.3.1` - adds support for Next.js Cache Components. The upstream version has a bug where `Temporal.Instant.from(<ISO>)` will trigger a `used new Date() before accessing either uncached data` error during Next.js 16 pre-rendering, even though it is not actually using the current (dynamic) timestamp. 
+   - Upstream PR: https://github.com/fullcalendar/temporal-polyfill/pull/82
 
 ## Table of Contents
 
@@ -19,13 +25,13 @@ Only 20 kB, [spec compliant](#spec-compliance)
 ## Installation
 
 ```
-npm install temporal-polyfill
+npm install @rikdotcodes/temporal-polyfill
 ```
 
 Import as an ES module without side effects:
 
 ```js
-import { Temporal } from 'temporal-polyfill'
+import { Temporal } from '@rikdotcodes/temporal-polyfill'
 
 console.log(Temporal.Now.zonedDateTimeISO().toString())
 ```
@@ -33,12 +39,12 @@ console.log(Temporal.Now.zonedDateTimeISO().toString())
 Or, import globally:
 
 ```js
-import 'temporal-polyfill/global'
+import '@rikdotcodes/temporal-polyfill/global'
 
 console.log(Temporal.Now.zonedDateTimeISO().toString())
 ```
 
-Use a `<script>` tags with a CDN link:
+~~Use a `<script>` tags with a CDN link:~~ unsupported for this fork
 
 ```html
 <script src='https://cdn.jsdelivr.net/npm/temporal-polyfill@0.3.0/global.min.js'></script>
