@@ -13,7 +13,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "temporal-polyfill": "workspace:*"
+    "@rikdotcodes/temporal-polyfill": "workspace:*"
   },
   "devDependencies": {
     "@types/node": "^20.11.30",

@@ -33,6 +33,6 @@
   },
   "devDependencies": {
     "locale-data": "workspace:*",
-    "temporal-polyfill": "workspace:*"
+    "@rikdotcodes/temporal-polyfill": "workspace:*"
   }
 }

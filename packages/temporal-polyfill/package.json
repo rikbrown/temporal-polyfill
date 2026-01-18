@@ -1,9 +1,8 @@
 {
-  "private": true,
-  "name": "temporal-polyfill",
-  "version": "0.3.0",
-  "title": "Temporal Polyfill",
-  "description": "A lightweight polyfill for Temporal, successor to the JavaScript Date object",
+  "name": "@rikdotcodes/temporal-polyfill",
+  "version": "0.3.1",
+  "title": "Temporal Polyfill (Next.js-compatible)",
+  "description": "A lightweight polyfill for Temporal, successor to the JavaScript Date object [forked for Next.js Cache components)",
   "author": {
     "name": "Adam Shaw",
     "email": "arshaw@users.noreply.github.com",
@@ -13,8 +12,16 @@
     {
       "name": "Ishaan Bharal",
       "email": "ishbharal@gmail.com"
+    },
+    {
+      "name": "Rik Brown",
+      "email": "rik@rik.codes"
     }
   ],
+  "maintainers": [{
+    "name": "Rik Brown",
+    "email": "rik@rik.codes"
+  }],
   "license": "MIT",
   "copyright": "2024 Adam Shaw",
   "repository": {

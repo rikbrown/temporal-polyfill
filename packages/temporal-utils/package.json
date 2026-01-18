@@ -27,7 +27,7 @@
   },
   "devDependencies": {
     "@biomejs/biome": "1.5.1",
-    "temporal-polyfill": "workspace:*",
+    "@rikdotcodes/temporal-polyfill": "workspace:*",
     "vitest": "^1.2.2"
   }
 }

@@ -28,6 +28,6 @@
     "temporal-spec": "workspace:*"
   },
   "devDependencies": {
-    "temporal-polyfill": "workspace:*"
+    "@rikdotcodes/temporal-polyfill": "workspace:*"
   }
 }
