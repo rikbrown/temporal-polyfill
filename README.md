@@ -9,7 +9,7 @@ Only 20 kB, [spec compliant](#spec-compliance)
 
 ### Fork Changes
 
-* `0.3.1` - adds support for Next.js Cache Components. The upstream version has a bug where `Temporal.Instant.from(<ISO>)` will trigger a `used new Date() before accessing either uncached data` error during Next.js 16 pre-rendering, even though it is not actually using the current (dynamic) timestamp. 
+* `0.3.2` - adds support for Next.js Cache Components. The upstream version has a bug where `Temporal.Instant.from(<ISO>)` will trigger a `used new Date() before accessing either uncached data` error during Next.js 16 pre-rendering, even though it is not actually using the current (dynamic) timestamp. 
    - Upstream PR: https://github.com/fullcalendar/temporal-polyfill/pull/82
 
 ## Table of Contents
